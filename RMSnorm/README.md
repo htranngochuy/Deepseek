@@ -1,6 +1,4 @@
-# Flatten + RMSNorm (khối Hyperconnection)
-
-Mô hình C của khối: `DDR4 (bf16) -> RAB -> thanh ghi -> Flatten (fp32) -> RMSNorm (fp32)`.
+# RMSNorm 
 
 ## 1. Cấu trúc thư mục
 
@@ -48,7 +46,7 @@ Mỗi lệnh phải in ra số phiên bản. Nếu lệnh nào báo `is not reco
 ### Bước 3. Lấy code từ GitHub
 
 ```powershell
-git clone https://github.com/htranngochuy/Deepseek-.git
+git clone https://github.com/htranngochuy/Deepseek.git
 ```
 
 ### Bước 4. Vào thư mục gốc của project
