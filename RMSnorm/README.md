@@ -10,12 +10,14 @@ Thư mục gốc của project là thư mục chứa `Makefile`, `include/`, `so
 ├── include/
 │   ├── config.h           hằng số 
 │   ├── data_type.h        kiểu bf16 và chuyển đổi bf16 <-> fp32
-│   ├── data_structure.h   struct DDR4_format, RAB_format, registers_format
-│   ├── load.h             load_gl_x_i (DDR4 -> RAB), load_lc_x_i (RAB -> thanh ghi)
-│   └── kernel.h           flatten, rmsnorm
+│   ├── data_structure.h   struct WTB_format, RAB_format, registers_format
+│   ├── load.h
+│   ├── store.h   
+│   └── kernel.h           rmsnorm
 ├── source/
 │   ├── data_type.c
 │   ├── load.c
+│   ├── store.c  
 │   └── kernel.c
 └── test/
     └── main.c             chương trình chạy thử
@@ -52,7 +54,7 @@ git clone https://github.com/htranngochuy/Deepseek.git
 ### Bước 4. Vào thư mục gốc của project
 
 ```powershell
-cd Deepseek-
+cd Deepseek
 ```
 
 ### Bước 5. Kiểm tra đang ở đúng thư mục
